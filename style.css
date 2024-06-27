@@ -45,7 +45,7 @@ p {
   color: #150c01cc;
 }
 header{
-  background-color: #dc770b7c;
+  background-color: #ffffff;
   width: 100%;
   position: fixed;
   z-index: 15;
@@ -89,6 +89,86 @@ header{
 .hdiv a {
   text-decoration: none;
 }
+.hum{
+  display: none;
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width:730px) {
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  .hdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .hlogo {
+    position: relative;
+  }
+  .booking {
+    width: 125px;
+    height: 36px;
+    /* position: absolute;
+    left: 984px; */
+  }
+  .hdiv li {
+    list-style-type: none;
+  }
+  .hdiv a {
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width:600px) {
+  
+  
+  .hdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+  .booking {
+    width: 100px;
+    height: 26px;
+    /* position: absolute;
+    left: 984px; */
+  }
+}
+@media only screen and (max-width:510px) {
+  .humburgermenu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .items{
+    display: none;
+  }
+  .hum{
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+}
 .foodtime {
   width: 555px;
   height: 356px;
@@ -130,11 +210,66 @@ header{
   position: relative;
 }
 .tpan {
+  display: flex;
   width: 801px;
   height: 670px;
   position: absolute;
   left: 500px;
   top: 0;
+}
+@media only screen and (max-width:768px) {
+  .foodtime {
+    width: 100%;
+    height: 356px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 50px;
+    margin-top: 180px;
+    position: relative;
+    z-index: 10;
+  }
+  .foodtime h2 {
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 48.83px;
+  }
+  .foodtime p{
+    font-size: 18px;
+  }
+  .onfd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  .ordernow {
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dc780b;
+  }
+  .fooddetails {
+    width: 170px;
+    height: 60px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px silver;
+    border-radius: 5px;
+  }
+  .wrapper1 {
+    position: relative;
+  }
+  .tpan {
+    display: none;
+    width: 760px;
+    height: 670px;
+    position: absolute;
+    left: 0;
+    top: -50;
+  }
 }
 .passion {
   text-align: center;
@@ -231,6 +366,15 @@ header{
   background-color: #dc780b;
   color: #ffffff;
 }
+@media only screen and (max-width:768px) {
+  .wrapper{
+    align-items: center;
+  }
+  .sister {
+    width: 355px;
+    height: 300px;
+  }
+}
 .menu {
   display: flex;
   align-items: center;
@@ -304,6 +448,82 @@ header{
   align-items: center;
   justify-content: space-between;
   column-gap: 2px;
+}
+@media only screen and (max-width:768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .menu h2 {
+    margin: 20px 0 50px 0;
+  }
+  .menu p {
+    margin-bottom: 100px;
+  }
+  .cardss {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wrapper4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .card {
+    width: 360px;
+    height: 435px;
+    border-radius: 75px 10px 10px 10px;
+    align-items: start;
+    transition: box-shadow 1s ease-in-out;
+  }
+  .card:hover {
+    box-shadow: 0 0 0 1px silver;
+  }
+  .radius {
+    border-radius: 75px 10px 75px 0;
+  }
+  .foodsname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0 10px;
+  }
+  .foodsname span {
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .plus {
+    width: 36px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #dc780b;
+  }
+  .plus p {
+    color: #ffffff;
+  }
+  .stars {
+    width: 88px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2px;
+  }
 }
 .left1 {
   width: 540px;
@@ -549,4 +769,36 @@ footer {
 }
 .footerimg{
   margin: 10px 0;
+}
+.footerimgs{
+  display: flex;
+  gap: 5px;
+}
+@media only screen and (max-width:768px) {
+  footer {
+    height: 429px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .foot{
+    width: 222px;
+  }
+  .foot1{
+    width: 222px;
+  }
+  .foot2{
+    width: 222px;
+  }
+  .foot3{
+    width: 222px;
+  }
+  .footerimg{
+    margin: 10px 0;
+  }
+  .footerimgs{
+    display: flex;
+    gap: 10px;
+  }
 }
